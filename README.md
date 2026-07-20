@@ -29,7 +29,7 @@ Our framework **TopoMamba** is evaluated across four distinct clinical/biologica
 | **Abdomen MRI (AMOS)** | Abdominal MRI | 13 Abdominal Organs (Cross-modality evaluation) | `https://amos22.grand-challenge.org/` |
 | **Cell Segmentation** | Microscopy | Multi-modal Cell Nuclei & Instances | `https://neurips22-cellseg.grand-challenge.org/` |
 
-> **Scribble Annotations**: The weak scribble supervision signals used in our experiments are synthesized/adopted following the standard protocols in weakly supervised segmentation benchmarks.
+> **Scribble Annotations**: The weak scribble supervision signals used in our experiments are synthesized/adopted following the standard  pipeline from [WSL4MIS ](https://github.com/HiLab-git/WSL4MIS/blob/main/code/scribbles_generator.py).
 
 ## 🛠️ Installation
 
