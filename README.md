@@ -4,15 +4,16 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Paper](https://img.shields.io/badge/Paper-PDF-blue.svg)](#) <!-- 论文录用后可替换为 arXiv / Journal 链接 -->
 
-Official PyTorch implementation of **TopoMamba**, a topology-aware Mamba-based framework designed for weakly supervised 2D and 3D medical image segmentation.
+Official PyTorch implementation of **TopoMamba**, a topology-aware Mamba-based framework designed for weakly supervised  medical image segmentation.
 
 ---
 
 ## 💡 Highlights
 
-- **Mamba Backbone Integration**: Harnesses state space models (SSMs) to achieve long-range contextual modeling with linear computational complexity.
-- **Topology-Aware Constraints**: Incorporates topological losses/guidance to preserve critical structural features under weak supervision.
-- **Multi-Modality Support**: Capable of handling both 2D slices and 3D volumetric medical images (e.g., MRI/CT).
+- **Linear SSM Meets Topological Persistence**: First weakly supervised framework to integrate topological persistence constraints ($\mathcal{L}_{\text{PH}}$) directly into linear-time ($\mathcal{O}(N)$) State Space Models (Mamba), solving the pseudo-label noise propagation issue during selective scanning.
+- **Dual-stream Spatial-Topological Mechanism (DSTM)**: Replaces classic skip connections with dynamic gating ($\mathcal{G}_{\text{topo}}$) driven by high-level semantic gradients ($\nabla\mathcal{L}_{\text{PH}}$) to eliminate boundary artifacts and preserve organ connectivity.
+- **Active Topo-Consistency Training Loop**: Employs a real-time `topoPseudoFilter` pruning loop to filter out architecturally invalid teacher pseudo-labels, combined with a differential boundary consistency loss ($\mathcal{L}_{\text{bound}}$) to stabilize edges under sparse scribble signals.
+- **State-of-the-Art Cross-Modality Performance**: Evaluated across 4 distinct clinical modalities (**Cardiac MRI**, **Abdominal CT**, **Abdominal MRI**, and **Microscopy images**), achieving superior segmentation and minimal Betti Errors.
 
 ---
 
