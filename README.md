@@ -18,16 +18,16 @@ Official PyTorch implementation of **TopoMamba**, a topology-aware Mamba-based f
 ---
 ## 📁 Data Preparation
 
-### 1. Benchmark Datasets
+### Benchmark Datasets
 
 Our framework **TopoMamba** is evaluated across four distinct clinical modalities. You can download the raw datasets from their official challenges/sources below:
 
 | Dataset | Modality | Target Organs | Link |
 | :--- | :---: | :---: | :---: |
-| **ACDC** | Cardiac MRI | Right/Left Ventricle, Myocardium | [ACDC Challenge](https://www.creatis.insa-lyon.fr/Challenge/acdc/) |
-| **FLARE 2022** / **Synapse** | Abdominal CT | Multi-organ (Liver, Kidney, Spleen, etc.) | [Synapse Portal](https://www.synapse.org/#!Synapse:syn3193805) |
-| **CHAOS** | Abdominal MRI | Liver, Kidneys, Spleen | [CHAOS Challenge](https://chaos.grand-challenge.org/) |
-| **MoNuSeg** | Microscopy | Cell Nuclei | [MoNuSeg Challenge](https://monuseg.grand-challenge.org/) |
+| **ACDC** | Cardiac MRI | Right/Left Ventricle, Myocardium | [ACDC Challenge]([https://www.creatis.insa-lyon.fr/Challenge/acdc/](https://humanheart-project.creatis.insa-lyon.fr/database/#collection/637218c173e9f0047faa00fb)) |
+| **FLARE 2022** / **Synapse** | Abdominal CT | Multi-organ (Liver, Kidney, Spleen, etc.) | [Synapse Portal]([https://www.synapse.org/#!Synapse:syn3193805](https://flare22.grand-challenge.org/Dataset/)) |
+| **AMOS** | Abdominal MRI | Liver, Kidneys, Spleen | [AMOS Challenge]([https://chaos.grand-challenge.org/](https://amos22.grand-challenge.org/Instructions/)) |
+| **MoNuSeg** | Microscopy | Cell Nuclei | [MoNuSeg Challenge]([https://monuseg.grand-challenge.org/](https://neurips22-cellseg.grand-challenge.org/dataset/)) |
 
 > **Scribble Annotations**: The weak scribble supervision signals used in our experiments are synthesized/adopted following the standard protocols in weakly supervised segmentation benchmarks.
 
