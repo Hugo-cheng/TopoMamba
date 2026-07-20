@@ -46,11 +46,7 @@ conda env create -f environment.yml
 # Activate the environment
 conda activate topomamba
 
+🚀 Quick Start Training
+Run the standard training command with pre-trained weights on the ACDC dataset:
 ### Training TopoMamba
-```bash
-# Train with custom learning rate, batch size, and log output
-python train_acdc.py \
-    --pretrain_weights ".best_model.pth" \
-    --lr 0.0001 \
-    --max_epochs 500 \
-    --batch_size 12 
+ 
