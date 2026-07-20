@@ -16,6 +16,20 @@ Official PyTorch implementation of **TopoMamba**, a topology-aware Mamba-based f
 - **State-of-the-Art Cross-Modality Performance**: Evaluated across 4 distinct clinical modalities (**Cardiac MRI**, **Abdominal CT**, **Abdominal MRI**, and **Microscopy images**), achieving superior segmentation and minimal Betti Errors.
 
 ---
+## 📁 Data Preparation
+
+### 1. Benchmark Datasets
+
+Our framework **TopoMamba** is evaluated across four distinct clinical modalities. You can download the raw datasets from their official challenges/sources below:
+
+| Dataset | Modality | Target Organs | Link |
+| :--- | :---: | :---: | :---: |
+| **ACDC** | Cardiac MRI | Right/Left Ventricle, Myocardium | [ACDC Challenge](https://www.creatis.insa-lyon.fr/Challenge/acdc/) |
+| **FLARE 2022** / **Synapse** | Abdominal CT | Multi-organ (Liver, Kidney, Spleen, etc.) | [Synapse Portal](https://www.synapse.org/#!Synapse:syn3193805) |
+| **CHAOS** | Abdominal MRI | Liver, Kidneys, Spleen | [CHAOS Challenge](https://chaos.grand-challenge.org/) |
+| **MoNuSeg** | Microscopy | Cell Nuclei | [MoNuSeg Challenge](https://monuseg.grand-challenge.org/) |
+
+> **Scribble Annotations**: The weak scribble supervision signals used in our experiments are synthesized/adopted following the standard protocols in weakly supervised segmentation benchmarks.
 
 ## 🛠️ Installation
 
