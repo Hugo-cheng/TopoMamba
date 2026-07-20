@@ -45,8 +45,30 @@ conda env create -f environment.yml
 
 # Activate the environment
 conda activate topomamba
-
-🚀 Quick Start Training
+```
+## 🚀 Quick Start Training
 Run the standard training command with pre-trained weights on the ACDC dataset:
-### Training TopoMamba
- 
+```
+python train_acdc.py \
+    --pretrain_weights "best_model.pth" \
+    --batch_size 8 \
+    --max_epochs 200 \
+    --root_path "./data/acdc/train"
+```
+
+## 📊 Evaluate TopoMamba
+Run testing on the validation/test set using the trained TopoMamba checkpoint:
+```
+python test_acdc.py \
+    --pth_path "best_model.pth" \
+    --root_path "./data/acdc/val"
+```
+
+## 🔍 TopoMamba Feature Map Visualization
+Generate Class Activation Maps (CAM) for the proposed TopoMamba architecture:
+```
+python visual_cam.py \
+    --pth_path "best_model.pth" \
+    --root_path "./data/acdc/val" \
+    --model_type "BiS_Mamba"
+```
