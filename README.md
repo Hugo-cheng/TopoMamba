@@ -20,14 +20,14 @@ Official PyTorch implementation of **TopoMamba**, a topology-aware Mamba-based f
 
 ### Benchmark Datasets
 
-Our framework **TopoMamba** is evaluated across four distinct clinical modalities. You can download the raw datasets from their official challenges/sources below:
+Our framework **TopoMamba** is evaluated across four distinct clinical/biological modalities under sparse scribble supervision. You can download the raw datasets and their official challenges from the links below:
 
-| Dataset | Modality | Target Organs | Link |
-| :--- | :---: | :---: | :---: |
-| **ACDC** | Cardiac MRI | Right/Left Ventricle, Myocardium | [ACDC Challenge]([https://www.creatis.insa-lyon.fr/Challenge/acdc/](https://humanheart-project.creatis.insa-lyon.fr/database/#collection/637218c173e9f0047faa00fb)) |
-| **FLARE 2022** / **Synapse** | Abdominal CT | Multi-organ (Liver, Kidney, Spleen, etc.) | [Synapse Portal]([https://www.synapse.org/#!Synapse:syn3193805](https://flare22.grand-challenge.org/Dataset/)) |
-| **AMOS** | Abdominal MRI | Liver, Kidneys, Spleen | [AMOS Challenge]([https://chaos.grand-challenge.org/](https://amos22.grand-challenge.org/Instructions/)) |
-| **MoNuSeg** | Microscopy | Cell Nuclei | [MoNuSeg Challenge]([https://monuseg.grand-challenge.org/](https://neurips22-cellseg.grand-challenge.org/dataset/)) |
+| Dataset | Modality | Target Structures / Organs | Official Link |
+| :--- | :---: | :--- | :---: |
+| **ACDC** | Cine-MRI | Right Ventricle (RV), Left Ventricle (LV), Myocardium (MYO) | [ACDC Challenge](https://humanheart-project.creatis.insa-lyon.fr/database/#collection/637218c173e9f0047faa00fb) |
+| **Abdomen CT (FLARE)** | Abdominal CT | 13 Abdominal Organs (Liver, Spleen, Pancreas, Kidneys, Stomach, etc.) | [FLARE 2022 Challenge](https://flare22.grand-challenge.org/Dataset/) |
+| **Abdomen MRI (AMOS)** | Abdominal MRI | 13 Abdominal Organs (Cross-modality evaluation) | [AMOS 2022 Challenge](https://amos22.grand-challenge.org/Instructions/) |
+| **Cell Segmentation** | Microscopy | Multi-modal Cell Nuclei & Instances | [NeurIPS CellSeg Challenge](https://neurips22-cellseg.grand-challenge.org/dataset/) |
 
 > **Scribble Annotations**: The weak scribble supervision signals used in our experiments are synthesized/adopted following the standard protocols in weakly supervised segmentation benchmarks.
 
