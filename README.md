@@ -26,5 +26,8 @@ Clone the repository and create a Python virtual environment:
 git clone [https://github.com/Hugo-cheng/TopoMamba.git](https://github.com/Hugo-cheng/TopoMamba.git)
 cd TopoMamba
 
-conda create -n topomamba python=3.10 -y
+# Create conda environment from environment.yml
+conda env create -f environment.yml
+
+# Activate the environment
 conda activate topomamba
