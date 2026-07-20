@@ -24,10 +24,10 @@ Our framework **TopoMamba** is evaluated across four distinct clinical/biologica
 
 | Dataset | Modality | Target Structures / Organs | Official Link |
 | :--- | :---: | :--- | :---: |
-| **ACDC** | Cine-MRI | Right Ventricle (RV), Left Ventricle (LV), Myocardium (MYO) | [ACDC Challenge](https://humanheart-project.creatis.insa-lyon.fr/database/#collection/637218c173e9f0047faa00fb) |
-| **Abdomen CT (FLARE)** | Abdominal CT | 13 Abdominal Organs (Liver, Spleen, Pancreas, Kidneys, Stomach, etc.) | <a href="https://flare22.grand-challenge.org/Dataset/" rel="noreferrer" target="_blank">FLARE 2022 Challenge</a> |
-| **Abdomen MRI (AMOS)** | Abdominal MRI | 13 Abdominal Organs (Cross-modality evaluation) | <a href="https://amos22.grand-challenge.org/Instructions/" rel="noreferrer" target="_blank">AMOS 2022 Challenge</a> |
-| **Cell Segmentation** | Microscopy | Multi-modal Cell Nuclei & Instances | <a href="https://neurips22-cellseg.grand-challenge.org/dataset/" rel="noreferrer" target="_blank">NeurIPS CellSeg Challenge</a> |
+| **ACDC** | Cine-MRI | Right Ventricle (RV), Left Ventricle (LV), Myocardium (MYO) | <a href="https://humanheart-project.creatis.insa-lyon.fr/database/#collection/637218c173e9f0047faa00fb" rel="noreferrer" referrerpolicy="no-referrer" target="_blank">ACDC Challenge</a> |
+| **Abdomen CT (FLARE)** | Abdominal CT | 13 Abdominal Organs (Liver, Spleen, Pancreas, Kidneys, Stomach, etc.) | <a href="https://flare22.grand-challenge.org/" rel="noreferrer" referrerpolicy="no-referrer" target="_blank">FLARE 2022 Challenge</a> |
+| **Abdomen MRI (AMOS)** | Abdominal MRI | 13 Abdominal Organs (Cross-modality evaluation) | <a href="https://amos22.grand-challenge.org/" rel="noreferrer" referrerpolicy="no-referrer" target="_blank">AMOS 2022 Challenge</a> |
+| **Cell Segmentation** | Microscopy | Multi-modal Cell Nuclei & Instances | <a href="https://neurips22-cellseg.grand-challenge.org/" rel="noreferrer" referrerpolicy="no-referrer" target="_blank">NeurIPS CellSeg Challenge</a> |
 
 > **Scribble Annotations**: The weak scribble supervision signals used in our experiments are synthesized/adopted following the standard protocols in weakly supervised segmentation benchmarks.
 
