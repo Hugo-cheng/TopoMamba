@@ -20,10 +20,10 @@ https://github.com/user-attachments/assets/366b8128-50f1-42f8-9299-124300a58887
 
 ## 💡 Highlights
 
-- **Linear SSM Meets Topological Persistence**: First weakly supervised framework to integrate topological persistence constraints ($\mathcal{L}_{\text{PH}}$) directly into linear-time ($\mathcal{O}(N)$) State Space Models (Mamba), solving the pseudo-label noise propagation issue during selective scanning.
-- **Dual-stream Spatial-Topological Mechanism (DSTM)**: Replaces classic skip connections with dynamic gating ($\mathcal{G}_{\text{topo}}$) driven by high-level semantic gradients ($\nabla\mathcal{L}_{\text{PH}}$) to eliminate boundary artifacts and preserve organ connectivity.
-- **Active Topo-Consistency Training Loop**: Employs a real-time `topoPseudoFilter` pruning loop to filter out architecturally invalid teacher pseudo-labels, combined with a differential boundary consistency loss ($\mathcal{L}_{\text{bound}}$) to stabilize edges under sparse scribble signals.
-- **State-of-the-Art Cross-Modality Performance**: Evaluated across 4 distinct clinical modalities (**Cardiac MRI**, **Abdominal CT**, **Abdominal MRI**, and **Microscopy images**), achieving superior segmentation and minimal Betti Errors.
+* **Linear SSM Meets Topological Persistence:** First weakly supervised framework to integrate topological persistence constraints ($\mathcal{L}_{\text{PH}}$) directly into linear-time ($\mathcal{O}(N)$) State Space Models (Mamba), solving the pseudo-label noise propagation issue during selective scanning.
+* **Dual-stream Spatial-Topological Mechanism (DSTM):** Replaces classic skip connections with dynamic gating ($\mathcal{G}_{\text{topo}}$) driven by high-level semantic gradients ($\nabla\mathcal{L}_{\text{PH}}$) to eliminate boundary artifacts and preserve organ connectivity.
+* **Active Topo-Consistency Training Loop:** Employs a real-time `topoPseudoFilter` pruning loop to filter out architecturally invalid teacher pseudo-labels, combined with a differential boundary consistency loss ($\mathcal{L}_{\text{bound}}$) to stabilize edges under sparse scribble signals.
+* **State-of-the-Art Cross-Modality Performance:** Evaluated across 4 distinct clinical modalities (Cardiac MRI, Abdominal CT, Abdominal MRI, and Microscopy images), achieving superior segmentation and minimal Betti Errors.
 
 ---
 ## 📁 Data Preparation
